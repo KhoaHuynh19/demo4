@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            height: 600px;
+            width: 960px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        header {
+            height: 150px;
+            width: 960px;
+            background-color: #294e79;
+            position: relative;
+        }
+        
+        header img {
+            top: 20px;
+            left: 10px;
+            position: absolute;
+        }
+        
+        header h2 {
+            top: 20px;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        
+        header h4 {
+            top: 50px;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        
+        header #frm {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+        }
+        
+        header #frm #txts {
+            border: 1px solid gray;
+            padding: 2px;
+        }
+        
+        header #frm #btnS {
+            border: 1px solid gray;
+            padding: 2px;
+            border-radius: 50%;
+            background-color: cadetblue;
+        }
+        
+        nav {
+            position: absolute;
+            bottom: 3px;
+            right: 20px;
+        }
+        
+        .menu li {
+            display: inline-table;
+            background-color: #576c85;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .menu li:hover {
+            background-color: #e673c3;
+        }
+        
+        .menu li a {
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+            background-color: #576c85;
+            height: 50px;
+            line-height: 50px;
+            position: absolute
+        }
+        
+        .menu li:hover .sub-menu {
+            display: block;
+            left: 0px;
+            top: 51px;
+        }
+        
+        .menu li:nth-child(4) {
+            position: relative;
+        }
+        
+        .menu li.sub-menu li:nth-child(1) {
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            width: 115px;
+        }
+        
+        .menu li.sub-menu li:nth-child(2) {
+            position: absolute;
+            top: 54px;
+            left: 0px;
+            width: 115px;
+        }
+        
+        .menu li.sub-menu li:nth-child(3) {
+            position: absolute;
+            top: 106px;
+            left: 0px;
+            width: 115px;
+        }
+        
+        section p i {
+            color: red;
+            float: left;
+            text-shadow: 20px 10px 10px green;
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+        section {
+            width: 40%;
+            height: 450px;
+            background-color: white;
+            float: left;
+        }
+        
+        section {
+            width: 40%;
+            height: 450px;
+            background-color: white;
+            float: left;
+        }
+        
+        #section-right {
+            color: black;
+            padding-left: 51%;
+            position: absolute;
+            margin: -350px;
+        }
+        
+        aside {
+            height: 450px;
+            background-color: white;
+            margin-right: 10px;
+        }
+        
+        section h3 {
+            padding-left: 20px;
+            color: gray;
+            padding-top: 20px;
+        }
+        
+        aside img {
+            padding-left: 315px;
+        }
+        
+        aside h3 {
+            color: gray;
+            padding-left: 700px;
+            padding-top: 50px;
+        }
+        
+        .form-row {
+            padding-left: 20px;
+        }
+        
+        aside p {
+            padding-left: 700px;
+        }
+        
+        footer p {
+            color: white;
+            background-color: #294e79;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/flower.png" alt="" srcset="" height="100" width="80">
+            <h2>FlowerBox 360</h2>
+            <h4>...to get your daily close of luxury roses!</h4>
+            <form action="" method="post" id="frm">
+                <input type="text" name="txts" id="txts" placeholder="Search the site..." required>
+                <button type="submit" id="btnS">GO</button>
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Gift Baskets</a></li>
+                    <li><a href="#">Flowers Services </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Gift Baskets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content"></div>
+        <section>
+            <h3>Why Not Contact Us Today!</h3>
+            <hr>
+            <form action="">
+                <p><i>For FlowerBox 360 shoppers,that means not only can you send your friends and loved ones 
+                    the highest quality flowers found on online,but that you can do so at a great value.</i></p>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="txtName">Name:</label><br>
+                        <input type="text" id="txtName">
+                    </div>
+                    <div class="form-col">
+                        <label for="txtEmail">Email:</label><br>
+                        <input type="email" id="txtEmail">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="txtName">Telephone:</label><br>
+                        <input type="text" id="txtName">
+                    </div>
+                    <div class="form-col">
+                        <label for="txtEmail">Subject:</label><br>
+                        <input type="email" id="txtEmail">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="txtMessage">Message:</label><br>
+                    <textarea id="txtMessage" cols="40" rows="5"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <div id="section-right">
+                <h3>FlowerBox 360 Info!</h3>
+                <hr>
+                <p>Operating Hours:<br> Monday-Friday:9.00am-5.00pm.<br> Saturday:9.00am-1.00pm<br> Sunday:Closed(No Deliveries)<br> ORDER ONLINE 24/7 <br> <br> <br>
+                </p>
+                <p>
+                    SoftWare Engineering Dept.<br> Information Technology Falculty<br> First Floor,H building<br> <br>
+                </p>
+                <p>
+                    12 Nguyen Van Bao St.,Ward 4<br> Go Vap District <br> Ho Chi Minh City<br> Tel:02838940390<br> Fax:02839940954<br><br>
+
+                </p>
+            </div>
+
+        </section>
+        <aside>
+            <h3>Discounts & Specials</h3>
+            <img src="../img/rose.png" alt="" height="100px" width="190px">
+            <p>FlowerBox 360 offers many great discounts throughtout the year,from coupons and coupon codes,to promo codes and other savings. We also offer military flowwer discounts to our wonderful troops!</p>
+            <br>
+            <p style="padding-left: 800px; color: blue;">Read more &#155;&#155;</p>
+        </aside>
+        <footer>
+            <p><span style="color: white;">Copyright &copy;2022 - All Rights Reserved -</span> <span style="color: aqua;">
+            SoftWare Engineering Department - Industrial University of Ho Chi Minh City</span></p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
+</html>
